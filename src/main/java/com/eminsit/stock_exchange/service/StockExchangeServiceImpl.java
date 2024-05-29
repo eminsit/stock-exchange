@@ -22,7 +22,6 @@ public class StockExchangeServiceImpl implements StockExchangeService{
     StockService stockService;
 
 
-    @Lock(LockModeType.OPTIMISTIC)
     @Transactional
     @Override
     public StockExchange getOneByName(String name) {
